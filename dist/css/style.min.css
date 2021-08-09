@@ -56,6 +56,9 @@ label {
 .pb-50 {
     padding-bottom: 50px;
 }
+.mt-10 {
+    margin-top: 10px;
+}
 /**
  * 2.0 - Header
  */
@@ -109,9 +112,6 @@ label {
 }
 .pxp-nav>li.list-inline-item:not(.pxp-is-last) {
     margin-right: .8rem;
-}
-.pxp-nav>li.pxp-has-btns {
-    display: none;
 }
 .pxp-nav>li>a,
 .pxp-nav>li>a:hover {
@@ -971,6 +971,9 @@ label {
     margin-left: 20px;
 }
 /* SECCTION SOBRE MI */
+.pxp-cta-1{
+    padding-top: 73px;
+}
 .pxp-cta-1-caption {
     padding: 20px 30px;
     overflow: hidden;
@@ -1013,11 +1016,11 @@ label {
     opacity: .7;
 }
 .pxp-cta-1.pxp-cover {
-    min-height: 500px;
     position: relative;
+    /* height: 500px; */
 }
 .pxp-cta-1.pxp-cover .container-lg {
-    position: absolute;
+    /* position: absolute; */
     top: 400px;
 }
 @media screen and (min-width: 992px) {
@@ -1058,7 +1061,8 @@ label {
 }
 .pxp-services-item-text {
     position: absolute;
-    top: 60px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 20px;
     right: 20px;
     transition: all .4s ease-in-out;
@@ -1164,6 +1168,14 @@ label {
 .pxp-services-c-container .owl-next {
     margin-left: 20px;
 }
+.pxp-services-item{
+    height: 200px;
+}
+@media (min-width: 1200px){
+    .pxp-services-item{
+        height: 300px;
+    }
+}
 /**
  * 24.0 - Media queries
  */
@@ -1176,7 +1188,7 @@ label {
 
     .pxp-services-item {
         width: 50%;
-        height: 300px;
+        /* height: 300px; */
         float: left;
     }
 
@@ -1330,70 +1342,6 @@ label {
 
     .pxp-nav>li>.pxp-nav-sub>li>a:hover {
         padding-left: 10px;
-    }
-
-    .pxp-nav>li.pxp-has-btns {
-        display: block;
-    }
-
-    .pxp-nav>li.pxp-has-btns>.pxp-user-btns {
-        padding-top: 30px;
-    }
-
-    .pxp-user-btns-signup {
-        display: inline-block;
-        text-align: center;
-        white-space: nowrap;
-        background-color: #333;
-        height: 46px;
-        padding: 0 20px;
-        border: 1px solid #333;
-        border-radius: .25rem;
-        font-size: .9rem;
-        text-transform: uppercase;
-        line-height: 46px;
-        font-weight: 700;
-        color: #fff;
-        margin-right: 4px;
-        display: none;
-        transition: all .2s ease-in-out;
-    }
-
-    .pxp-user-btns-signup:hover {
-        text-decoration: none;
-        color: rgba(255, 255, 255, .7);
-    }
-
-    .pxp-header.pxp-mobile .pxp-user-btns-signup {
-        display: inline-block;
-    }
-
-    .pxp-user-btns-login {
-        display: inline-block;
-        text-align: center;
-        white-space: nowrap;
-        background-color: #fff;
-        height: 46px;
-        padding: 0 20px;
-        border: 1px solid #E2E2E2;
-        border-radius: .25rem;
-        font-size: .9rem;
-        text-transform: uppercase;
-        line-height: 46px;
-        font-weight: 700;
-        color: #333;
-        display: none;
-        transition: all .2s ease-in-out;
-    }
-
-    .pxp-user-btns-login:hover {
-        text-decoration: none;
-        color: #333;
-        border: 1px solid #333;
-    }
-
-    .pxp-header.pxp-mobile .pxp-user-btns-login {
-        display: inline-block;
     }
 
     .h2,

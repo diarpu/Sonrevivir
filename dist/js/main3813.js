@@ -529,7 +529,6 @@
         $('.pxp-header').toggleClass('pxp-mobile');
         $('.pxp-nav').toggle();
     });
-
     $('.pxp-blog-post-video').click(function() {
         $(this).hide().next('iframe').show();
     });
@@ -586,5 +585,27 @@
         var target = $(this).attr('data-href');
 
         $(target).carousel('prev');
+    });
+
+
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $(".goto").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+                // Store hash
+                var hash = this.hash;
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 2000, function () {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
     });
 })(jQuery);
