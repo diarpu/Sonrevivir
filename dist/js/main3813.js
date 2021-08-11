@@ -1,10 +1,9 @@
-const body = document.querySelector('body');
+// const body = document.querySelector('body');
 var tl = gsap.timeline();
 
 window.onload = function(){
 
     tl.to(".spinner-icon",0.7,{
-            delay: 1,
             opacity: 0,
             ease: "expo.Out"
         })
