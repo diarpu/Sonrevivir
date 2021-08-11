@@ -1,4 +1,4 @@
-// const body = document.querySelector('body');
+const body = document.querySelector('body');
 var tl = gsap.timeline();
 
 window.onload = function(){
@@ -7,18 +7,6 @@ window.onload = function(){
             opacity: 0,
             ease: "expo.Out"
         })
-    
-        // .to(".overlay h3",0.7,{
-        //     y: -100,
-        //     opacity: 0,
-        //     ease: "expo.Out"
-        // })
-
-        // .to(".overlay p",0.7,{
-        //     y: -100,
-        //     opacity: 0,
-        //     ease: "expo.Out"
-        // })
 
         .to(".overlay",1,{
             top: "-120%",
@@ -59,7 +47,7 @@ window.addEventListener('resize', ()=>{
 
 // MENU ANIMATION
 const menuOpen = document.querySelector('.btns');
-const menuClose = document.querySelector('.btn-menu.close');
+const menuClose = document.querySelector('.btn-menu.cerrar');
 const menuItem = document.querySelectorAll('.menu-item');
 
 menuOpen.addEventListener('click', (e)=>{
@@ -69,7 +57,7 @@ menuOpen.addEventListener('click', (e)=>{
         x: 0,
         pointerEvents: "all",
         ease: "expo.Out",
-    })
+    },"-=0.2")
     .from('.menu-item', 1,{
         y: 100,
         ease: "expo.Out",
