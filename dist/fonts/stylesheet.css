@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Galano Classic';
+    src: url('../fonts/GalanoClassic-Heavy.eot');
+    src: url('../fonts/GalanoClassic-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GalanoClassic-Heavy.woff2') format('woff2'),
+        url('../fonts/GalanoClassic-Heavy.woff') format('woff'),
+        url('../fonts/GalanoClassic-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lyon';
+    src: url('../fonts/Lyon.eot');
+    src: url('../fonts/Lyon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lyon.woff2') format('woff2'),
+        url('../fonts/Lyon.woff') format('woff'),
+        url('../fonts/Lyon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Classic';
+    src: url('../fonts/GalanoClassic-Regular.eot');
+    src: url('../fonts/GalanoClassic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GalanoClassic-Regular.woff2') format('woff2'),
+        url('../fonts/GalanoClassic-Regular.woff') format('woff'),
+        url('../fonts/GalanoClassic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mark';
+    src: url('../fonts/Mark-Regular.eot');
+    src: url('../fonts/Mark-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Mark-Regular.woff2') format('woff2'),
+        url('../fonts/Mark-Regular.woff') format('woff'),
+        url('../fonts/Mark-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

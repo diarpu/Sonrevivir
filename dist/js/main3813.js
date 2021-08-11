@@ -2,19 +2,24 @@ const body = document.querySelector('body');
 var tl = gsap.timeline();
 
 window.onload = function(){
-    body.classList.remove('hidden');
 
-    tl.to(".overlay p.title",0.7,{
-            y: -100,
+    tl.to(".spinner-icon",0.7,{
+            delay: 1,
             opacity: 0,
             ease: "expo.Out"
         })
+    
+        // .to(".overlay h3",0.7,{
+        //     y: -100,
+        //     opacity: 0,
+        //     ease: "expo.Out"
+        // })
 
-        .to(".overlay p",0.7,{
-            y: -100,
-            opacity: 0,
-            ease: "expo.Out"
-        })
+        // .to(".overlay p",0.7,{
+        //     y: -100,
+        //     opacity: 0,
+        //     ease: "expo.Out"
+        // })
 
         .to(".overlay",1,{
             top: "-120%",
@@ -42,6 +47,8 @@ window.onload = function(){
         ease: "expo.Out",
         opacity: "0",
     },"-=0.7")
+
+    body.classList.remove('hidden');
 }
 
 let vh = window.innerHeight * 0.01;
@@ -103,8 +110,7 @@ let anchoVentana = window.innerWidth;
 const topBtn = document.querySelector('.btn-top');
 window.addEventListener('scroll', (e) =>{
     let scrollActual = window.pageYOffset;
-    console.log(scrollActual);
-    if(scrollActual>616){
+    if(scrollActual>1000){
         topBtn.classList.add('go-top');
     }else{
         topBtn.classList.remove('go-top');
@@ -741,3 +747,5 @@ window.addEventListener('scroll', (e) =>{
         });
     });
 })(jQuery);
+
+// setTimeout( function() {console.clear();}, 3000 );

@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="theme-color" content="#9BC582">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./ProgramadorFitness.png">
+    <link rel="apple-touch-startup-image" href="./ProgramadorFitness.png">
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+    integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.15.0/video-js.min.css" integrity="sha512-RU6FIpN8MZ6jrswHMYzP9t7QlAtDkpCJP6uqyHYm56iP6eEdYCDfMW2C42KtimtJ8DKa+iWJqjpeTyLyQjV61g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="dist/css/style.min.css">
+    <!-- <link rel="manifest" href="manifest.json"> -->
 </head>
 
 
 <body id="body" class="hidden">
-    <!-- <div class="pxp-header fixed-top pxp-animate">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-5 col-md-2">
-                    <a href="index-2.html" class="pxp-logo text-decoration-none">SONREVIVIR</a>
-                </div>
-                <div class="col-2 col-md-8 text-center">
-                    <ul class="pxp-nav list-inline">
-                        <li class="list-inline-item">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="list-inline-item pxp-is-last"><a href="#about" class="nav-link goto">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-5 col-md-2 text-right">
-                    <a href="javascript:void(0);" class="pxp-header-nav-trigger"><span class="fa fa-bars"></span></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
+    <div class="overlay">
+        <!-- <h3 class="title">SONREVIVIR</h3>
+        <P>Lorem ipsum dolor sit amet</p> -->
+        <span class="spinner-icon"></span>
+    </div>    
 
     <header class="pxp-header pxp-animate">
         <nav>
@@ -65,9 +59,9 @@
 
         <!-- MENU ITEMS -->
         <div class="menu">
-            <a href="/" class="menu-left">
+            <div class="menu-left">
                 <!-- <p>HIDRO<span>STYLE</p> -->
-            </a>
+            </div>
 
             <div class="menu-right">
                 <div class="btn-menu close">
@@ -87,21 +81,9 @@
                     </div>
 
                     <div class="menu-icons">
-                        <a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path
-                                    d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z" />
-                            </svg></a>
-                        <a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path
-                                    d="M13 9h4.5l-.5 2h-4v9h-2v-9H7V9h4V7.128c0-1.783.186-2.43.534-3.082a3.635 3.635 0 0 1 1.512-1.512C13.698 2.186 14.345 2 16.128 2c.522 0 .98.05 1.372.15V4h-1.372c-1.324 0-1.727.078-2.138.298-.304.162-.53.388-.692.692-.22.411-.298.814-.298 2.138V9z" />
-                            </svg></a>
-                        <a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path
-                                    d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z" />
-                            </svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/></svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg></a>
+                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.606 6.995c-.076-.298-.292-.523-.539-.592C18.63 6.28 16.5 6 12 6s-6.628.28-7.069.403c-.244.068-.46.293-.537.592C4.285 7.419 4 9.196 4 12s.285 4.58.394 5.006c.076.297.292.522.538.59C5.372 17.72 7.5 18 12 18s6.629-.28 7.069-.403c.244-.068.46-.293.537-.592C19.715 16.581 20 14.8 20 12s-.285-4.58-.394-5.005zm1.937-.497C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -109,12 +91,12 @@
     </header>
 
     <div class="pxp-content">
-        <div class="pxp-hero vh-100">
+        <div class="pxp-hero">
             <div class="pxp-hero-props-carousel-2">
                 <div class="carousel slide pxp-hero-props-carousel-2-left" data-ride="carousel" data-pause="false"
                     data-interval="false">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-slide="0" style="background-color: #D4AA32;">
+                        <div class="carousel-item active" data-slide="0" style="background-color: #9BC582;">
                             <div class="pxp-caption">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10">
@@ -127,7 +109,7 @@
                             </div>
                             <a href="single-property.html" class="pxp-cta text-uppercase pxp-animate">View Details</a>
                         </div>
-                        <div class="carousel-item" data-slide="1" style="background-color: #64827C;">
+                        <div class="carousel-item" data-slide="1" style="background-color: #00AAA9;">
                             <div class="pxp-caption">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10">
@@ -140,7 +122,7 @@
                             </div>
                             <a href="single-property.html" class="pxp-cta text-uppercase pxp-animate">View Details</a>
                         </div>
-                        <div class="carousel-item" data-slide="2" style="background-color: #687389;">
+                        <div class="carousel-item" data-slide="2" style="background-color: #9BC582;">
                             <div class="pxp-caption">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10">
@@ -153,7 +135,7 @@
                             </div>
                             <a href="single-property.html" class="pxp-cta text-uppercase pxp-animate">View Details</a>
                         </div>
-                        <div class="carousel-item" data-slide="3" style="background-color: #CBB59E;">
+                        <div class="carousel-item" data-slide="3" style="background-color: #E6A939;">
                             <div class="pxp-caption">
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-10">
@@ -178,17 +160,17 @@
                         </div>
                         <div class="carousel-item" data-slide="1">
                             <div class="pxp-hero-bg pxp-cover"
-                                style="background-image: url(images/hero-prop-10.jpg); background-position: 50% 50%;">
+                                style="background-image: url(dist/images/hero-prop-10.jpg); background-position: 50% 50%;">
                             </div>
                         </div>
                         <div class="carousel-item" data-slide="2">
                             <div class="pxp-hero-bg pxp-cover"
-                                style="background-image: url(images/hero-prop-3.jpg); background-position: 50% 50%;">
+                                style="background-image: url(dist/images/hero-prop-3-thmb); background-position: 50% 50%;">
                             </div>
                         </div>
                         <div class="carousel-item" data-slide="3">
                             <div class="pxp-hero-bg pxp-cover"
-                                style="background-image: url(images/hero-prop-12.jpg); background-position: 50% 50%;">
+                                style="background-image: url(dist/images/hero-prop-10.jpg); background-position: 50% 50%;">
                             </div>
                         </div>
                     </div>
@@ -228,31 +210,448 @@
                 </div>
             </div>
             <div class="btn-wa">
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z" fill="rgba(255,255,255,1)"/></svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z"
+                            fill="rgba(255,255,255,1)" /></svg></a>
             </div>
-            
+
             <a href="#body" class="btn-top goto">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z" /></svg>
             </a>
         </div>
 
-        <div id="sonrevivir" class="pt-50 pb-50 position-relative">
+        <div id="about" class="pxp-cta-1 pxp-cover"
+        style="background-image: url(./dist/images/cta-fig-1.jpg); background-position: 50% 60%;">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="pxp-cta-1-caption pxp-animate-in">
+                        <h2 class="pxp-section-h2">Hola! Soy María Jesús de Marcos Ubero</h2>
+                        <p class="pxp-text-light">Enfermera desde hace 29 años, trabajo en un helicóptero de
+                            emergencia.</p>
+                        <p class="pxp-text-light">Soy una persona que ha vivido muchas situaciones complicadas,
+                            tanto en el trabajo como en la vida personal, una de ellas fue la enfermedad de mi
+                            madre, enfrentar una enfermedad como el cáncer fue muy difícil, pero desde muy pequeña
+                            me decidí a ver las cosas desde otro ángulo, de una manera positiva, a aprender de las
+                            cosas y desaprender de las que tu creas que no te hacen crecer.</p>
+                        <p class="pxp-text-light">Cada me acepto y me quiero tal como soy, con mis luces y mis
+                            sombras; adquiriendo un estilo de vida SONREVIVIR, SONRIE Y VIVE de la mejor manera que
+                            puedas, aprende de las malas situaciones, aprende a vivir positivamente y vive siempre
+                            con una sonrisa.</p>
+                        <p class="pxp-text-light">Y es así que como también me atreví a escribir mi primer Libro, el
+                            cual tiene el mismo nombre SONREVIVIR, y hoy te invito a ti a QUERERTE a vivir diferente
+                            como a ti te guste, sin prejuicios, sin fantasmas, te invito a adquirir mi estilo de
+                            vida Sonrevivir, verás el cambio en ti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="pxp-services-h pt-100 pb-100">
+            <div class="container">
+                <h2 class="pxp-section-h2">¿Qué es Sonrevivir?</h2>
+                <p class="pxp-text-light">Un método para vivir en positivo</p>
+
+                <div class="pxp-services-h-container mt-4 mt-md-5">
+                    <div class="pxp-services-h-fig pxp-cover pxp-animate-in rounded-lg">
+                        <video id="my-video" class="video-js" controls max-width="270" height="470" loading="lazy" poster="dist/video/Screenshot_20210810-152541_Chrome.jpg" data-setup="{}">
+                            <source src="dist/video/Presentación Cursos.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <div class="pxp-services-h-items pxp-animate-in ml-0 ml-lg-5 mt-4 mt-md-5 mt-lg-0">
+                        <div class="pxp-services-h-item">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/S.png" class="mr-4" alt="Letra S del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    <!-- <h5 class="mt-0">List your own property</h5> -->
+                                    Supera tus obstáculos, el cambio positivo que se debe hacer en tu yo interno "Se tu el cambio que quieres en los demás".
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-h-item mt-3 mt-md-4">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/O.png" class="mr-4" alt="Letra O del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    Observa tus creencias, las creencias establecidas por tus padres no definen tu vida o lo que quieres hacer con ella, vive como tu quieres sin hacer daño a nadie.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-h-item mt-3 mt-md-4">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/N.png" class="mr-4" alt="Letra N del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    No Pienses en  Negativo, siempre tendremos la oportunidad de elegir lo positivo de toda situación "la vida no es lo que te pasa, sino lo que haces con lo que te pasa"
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-h-item mt-3 mt-md-4">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/R.png" class="mr-4" alt="Letra R del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    Relaciónate con quien quieras, las personas que llegan a tu vida te dejan aneseñanzas (familia, Hijos, Amigos)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-h-item mt-3 mt-md-4">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/E.png" class="mr-4" alt="Letra E del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    Energía: llena tu vida de energía positiva haciendo aquello que diafrutas: trabajo, ocio, cursos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-h-item mt-3 mt-md-4">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/V6.png" class="mr-4" alt="Letra V del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    Vive de Forma consciente: ¿cambiaría a mejor el no hacerlo así?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-h-item mt-3 mt-md-4">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/I7.png" class="mr-4" alt="Letra I del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    Ilusiónate e impregna tu vida de ilusiones y metas conseguibles y bien planificadas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-h-item mt-3 mt-md-4">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/V8.png" class="mr-4" alt="Letra V del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    Valentía: afronta cada nueva situación buena y sobre todo las no tan buenas con valentía (fallecimientos, enfermedades, fracasos laborales)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-h-item mt-3 mt-md-4">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/I9.png" class="mr-4" alt="Letra I del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    Ingenio e Intención  para mejorar cada dia, cada mes cada año.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-h-item mt-3 mt-md-4">
+                            <div class="media">
+                                <img decoding="async" loading="lazy" src="./dist/images/R10.png" class="mr-4" alt="Letra R del acrónimo Sonrevivir">
+                                <div class="media-body">
+                                    Reinvención: se original, no seas una copia, pon tu esencia en todo lo que hagas, se ejemplo, se inspiración
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-100 pb-50">
+            <h2 class="pxp-section-h2 text-center">Próximos Lanzamientos</h2>
+            <!-- <p class="pxp-text-light text-center">Choose the plan that suits you best</p> -->
+            <div class="row mt-5">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="#" class="pxp-plans-1-item">
+                        <div class="pxp-plans-1-item-fig">
+                            <img decoding="async" loading="lazy" src="./dist/images/audiobook.svg" alt="Ícono Audio Libro">
+                        </div>
+                        <div class="pxp-plans-1-item-title">Audiolibro</div>
+                        <ul class="pxp-plans-1-item-features list-unstyled">
+                            <!-- <li>10 Listings</li> -->
+                            <!-- <li>2 Featured Listings</li> -->
+                        </ul>
+                        <div class="pxp-plans-1-item-price">
+                            <!-- <span class="pxp-plans-1-item-price-sum">Free</span> -->
+                            <!-- <span class="pxp-plans-1-item-price-period"> / 1 month</span> -->
+                        </div>
+                        <!-- <div class="pxp-plans-1-item-cta text-uppercase">Choose Plan</div> -->
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="#" class="pxp-plans-1-item pxp-is-popular">
+                        <div class="pxp-plans-1-item-label">Más Vendido</div>
+                        <div class="pxp-plans-1-item-fig">
+                            <img decoding="async" loading="lazy" src="./dist/images/file.svg" alt="Ícono Ebook">
+                        </div>
+                        <div class="pxp-plans-1-item-title">Ebook</div>
+                        <ul class="pxp-plans-1-item-features list-unstyled">
+                            <!-- <li>10 Listings</li> -->
+                            <!-- <li>2 Featured Listings</li> -->
+                        </ul>
+                        <div class="pxp-plans-1-item-price">
+                            <!-- <span class="pxp-plans-1-item-price-currency">$</span> -->
+                            <!-- <span class="pxp-plans-1-item-price-sum">49.99</span> -->
+                            <!-- <span class="pxp-plans-1-item-price-period"> / 6 months</span> -->
+                        </div>
+                        <!-- <div class="pxp-plans-1-item-cta text-uppercase">Choose Plan</div> -->
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="#" class="pxp-plans-1-item">
+                        <div class="pxp-plans-1-item-fig">
+                            <img decoding="async" loading="lazy" src="./dist/images/book.svg" alt="Ícono Libro en Físico">
+                        </div>
+                        <div class="pxp-plans-1-item-title">Libro en Físico</div>
+                        <ul class="pxp-plans-1-item-features list-unstyled">
+                            <!-- <li>10 Listings</li> -->
+                            <!-- <li>2 Featured Listings</li> -->
+                        </ul>
+                        <div class="pxp-plans-1-item-price">
+                            <!-- <span class="pxp-plans-1-item-price-currency">$</span> -->
+                            <!-- <span class="pxp-plans-1-item-price-sum">99.99</span> -->
+                            <!-- <span class="pxp-plans-1-item-price-period"> / 1 year</span> -->
+                        </div>
+                        <!-- <div class="pxp-plans-1-item-cta text-uppercase">Choose Plan</div> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="nosotros" class="pxp-services mt-50 pt-50 pb-50"
+            style="background-image: url(dist/images/services-h-fig.jpg); background-position: 50% 60%;">
+            <h2 class="text-center pxp-section-h2">¿Por qué comparto esto contigo?</h2>
+            <p class="pxp-text-light text-center">Sonreír y vivir con alegría</p>
+
+            <div class="container">
+                <div class="container2">
+                    <div class="pxp-services-container rounded-lg mt-4 mt-md-5">
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-fig">
+                                <img decoding="async" loading="lazy" src="dist/images/tick.svg" alt="...">
+                            </div>
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">Aceptación</div>
+                                <div class="pxp-services-item-text-sub">Siempre estamos buscando la aceptación de las
+                                    demás personas.</div>
+                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir te enseño a no hay que tener
+                                    miedo a perder personas en el proceso, sino hay que tener miedo que tú te pierdas en
+                                    el proceso de aceptación.</div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-fig">
+                                <img decoding="async" loading="lazy" src="dist/images/businessmen.svg" alt="Halagos y Críticas">
+                            </div>
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">Halagos y Criticas</div>
+                                <div class="pxp-services-item-text-sub">Muchos de los halagaos como las criticas que
+                                    recibimos determinan nuestra forma de sentirnos</div>
+                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir te enseño no tomarse muy en
+                                    serio ni los halagos ni las criticas, porque siempre son percepciones de la otras
+                                    persona. Lo importante es saber quienes somos nosotros.</div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-fig">
+                                <img decoding="async" loading="lazy" src="./dist/images/body.svg" alt="Ícono Etiquetas Físicas">
+                            </div>
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">Etiquetas Fisicas</div>
+                                <div class="pxp-services-item-text-sub">Desde que nacemos nos estan poniendo etiquetas,
+                                    que hacen daño aunque la intensión no se esa.</div>
+                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir trabajamos la acepatción y
+                                    poner el foco en lo bueno que cada persona tiene. Sonrevivamos con alegría.</div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-fig">
+                                <img decoding="async" loading="lazy" src="dist/images/service-icon-1.svg" alt="...">
+                            </div>
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">La empatía</div>
+                                <div class="pxp-services-item-text-sub">Despues de ver, valorar y observar no es facil
+                                    ponerse en lugar de otro, ni en los momentos muy felices ni en los momentos muy
+                                    triste.</div>
+                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir es importante elegir con
+                                    quién puedes hablar con dolor y con quién puedes hablar de felicidad.</div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="pxp-services-container rounded-lg">
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">La Coherencia</div>
+                                <div class="pxp-services-item-text-sub">Cuando haces lo que piensas y lo que dices, no
+                                    hace falta decirlo porque se dice solo.</div>
+                                <div class="pxp-services-item-text-sub mt-10">La coherencia y sonrevivir es algo que van
+                                    juntos.</div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-fig">
+                                <img decoding="async" loading="lazy" src="dist/images/ambulance.svg" alt="Conversaciones">
+                            </div>
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">Conversaciones en la ambulancia
+                                </div>
+                                <div class="pxp-services-item-text-sub">Es frecuente que los Madres y Padres no acepten
+                                    el camino de sus hijos, ¿Qué te gustaria que fuesen?, ¿Qué te gusta que hubieran
+                                    estaudiado?.</div>
+                                <div class="pxp-services-item-text-sub mt-10">Sonrevivir siempre, mucho mejor aceptar
+                                    que luchar contra la realidad que ves.</div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-fig">
+                                <img decoding="async" loading="lazy" src="dist/images/change.svg" alt="Confia en ti y Sonrevive, cuando triunfes
+                                y consigas aquello que siempre quisiste sonrie más fuerte y más grande.">
+                            </div>
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">El cambio</div>
+                                <div class="pxp-services-item-text-sub">Cuantas veces te has cuestionado o preguntado
+                                    que eso que dicen de ti no te gusta o no tiene nada que ver contigo?.</div>
+                                <div class="pxp-services-item-text-sub mt-10">Confia en ti y Sonrevive, cuando triunfes
+                                    y consigas aquello que siempre quisiste sonrie más fuerte y más grande.</div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-fig">
+                                <img decoding="async" loading="lazy" src="dist/images/global.svg" alt="Planeta Mental">
+                            </div>
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">Planeta Mental</div>
+                                <div class="pxp-services-item-text-sub">Es frecuente configurar una serie de normas; de
+                                    qué es justo, que es injusto, que de se debe de hacer y que no se debe hacer.</div>
+                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir (libro), encontraras
+                                    preguntas que los haran navegar en nuestra mente.</div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="pxp-services-container rounded-lg">
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-fig">
+                                <img decoding="async" loading="lazy" src="./dist/images/mascara.svg" alt="Ícono Máscara">
+                            </div>
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">Máscaras</div>
+                                <div class="pxp-services-item-text-sub">Por qué queremos aperentar eso que no somos? Por
+                                    qué fingir una vida que no tenemos?</div>
+                                <div class="pxp-services-item-text-sub mt-10">En Sorenvivir te enseño a cómo vivir sin
+                                    máscaras, como vivir de forma valiente cada día porque lo importante es que tú te
+                                    quieras y te aceptes.</div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">Cuidado del Cuerpo</div>
+                                <div class="pxp-services-item-text-sub">Actualmente ni hay que comer del todo y no hay
+                                    que comerselo todo.</div>
+                                <div class="pxp-services-item-text-sub mt-10">En sonrevivir cuidamos mente y cuidamos
+                                    cuerpo de forma saludable para vivir más y mejor.</div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">El consejo</div>
+                                <div class="pxp-services-item-text-sub">Cuantas veces a lo largo de la vida has recibido
+                                    algun consejo sin pedirlo?</div>
+                                <div class="pxp-services-item-text-sub mt-10">En Sorevivir: Te digo como aconsejar,
+                                    cuando aconsejar y qué hacer en esas situaciones.</div>
+                            </div>
+                        </div>
+                        <div class="pxp-services-item">
+                            <div class="pxp-services-item-fig">
+                                <img decoding="async" loading="lazy" src="./dist/images/adolescencia.svg" alt="Ícono Adolescencia dos jóvenes juntos.">
+                            </div>
+                            <div class="pxp-services-item-text text-justify">
+                                <div class="pxp-services-item-text-title text-center">La adolescencia</div>
+                                <div class="pxp-services-item-text-sub">Desde que mis hijos eran bebes, las personas
+                                    comenzaron a advertirme de las diferentes adolescencias que hiban a tener.</div>
+                                <div class="pxp-services-item-text-sub mt-10">En sonrevivir te doy metodos y formas para
+                                    hablar en la infancia y así puedan encontrarse mejor en la adolecencia.</div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-100 pb-100">
+            <h2 class="pxp-section-h2">Sigue nuestras redes</h2>
+            <p class="pxp-text-light"></p>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="single-post.html" class="pxp-posts-1-item">
+                        <div class="pxp-posts-1-item-fig-container">
+                            <div class="pxp-posts-1-item-fig pxp-cover" style="background-image: url(dist/images/posts-1.jpg);"></div>
+                        </div>
+                        <div class="pxp-posts-1-item-details">
+                            <div class="pxp-posts-1-item-details-category">Interior Design</div>
+                            <div class="pxp-posts-1-item-details-title">What to Expect When Working with an Interior Designer</div>
+                            <div class="pxp-posts-1-item-details-date mt-2">April 9, 2019</div>
+                            <div class="pxp-posts-1-item-cta text-uppercase">Read Article</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="single-post.html" class="pxp-posts-1-item">
+                        <div class="pxp-posts-1-item-fig-container">
+                            <div class="pxp-posts-1-item-fig pxp-cover" style="background-image: url(images/posts-2.jpg);"></div>
+                        </div>
+                        <div class="pxp-posts-1-item-details">
+                            <div class="pxp-posts-1-item-details-category">Architecture</div>
+                            <div class="pxp-posts-1-item-details-title">Private Contemporary Home Balancing Openness</div>
+                            <div class="pxp-posts-1-item-details-date mt-2">April 9, 2019</div>
+                            <div class="pxp-posts-1-item-cta text-uppercase">Read Article</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <a href="single-post.html" class="pxp-posts-1-item">
+                        <div class="pxp-posts-1-item-fig-container">
+                            <div class="pxp-posts-1-item-fig pxp-cover" style="background-image: url(images/posts-3.jpg);"></div>
+                        </div>
+                        <div class="pxp-posts-1-item-details">
+                            <div class="pxp-posts-1-item-details-category">Interior Design</div>
+                            <div class="pxp-posts-1-item-details-title">Stylish Modern Ranch Exuding a Welcoming Feel</div>
+                            <div class="pxp-posts-1-item-details-date mt-2">April 9, 2019</div>
+                            <div class="pxp-posts-1-item-cta text-uppercase">Read Article</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="blog.html" class="pxp-primary-cta text-uppercase mt-2 mt-md-4 pxp-animate">Read More</a>
+        </div>
+
+        <div class="pxp-full pxp-cover pt-100 pb-100" style="background-image: url(dist/images/newsletter-1-fig.jpg);">
+            <div class="container">
+                <h2 class="pxp-section-h2">Subscríbete a nuestro Newsletter</h2>
+                <!-- <p class="pxp-text-light">Subscríbete a nuestro Newsletter pera recibir..</p> -->
+                <div class="row mt-4 mt-md-5">
+                    <div class="col-sm-12 col-md-6">
+                        <form action="index-2.html" class="pxp-newsletter-1-form">
+                            <input type="text" class="form-control" placeholder="Enter your email...">
+                            <button id="submit" class="btn-submit text-uppercase mt-3 mt-md-4">Suscríbete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="sonrevivir" class="pt-50 pb-50 position-relative">
             <div class="pxp-services-c pxp-cover" style="background-image: url(images/services-c-fig-2.jpg);"></div>
             <div class="pxp-services-c-content">
                 <div class="pxp-services-c-intro">
                     <h2 class="pxp-section-h2">Sonrevivir</h2>
                     <p class="pxp-text-light">Es un método para vivir en positivo.</p>
-                    <!-- <a href="#" class="pxp-primary-cta text-uppercase mt-2 mt-md-3 mt-lg-5 pxp-animate">Learn More</a> -->
+                    <a href="#" class="pxp-primary-cta text-uppercase mt-2 mt-md-3 mt-lg-5 pxp-animate">Learn More</a>
                 </div>
                 <div class="pxp-services-c-container mt-4 mt-md-5 mt-lg-0">
                     <div class="owl-carousel pxp-services-c-stage">
                         <div>
                             <div href="#" class="pxp-services-c-item">
                                 <div class="pxp-services-c-item-fig">
-                                    <img src="dist/images/service-icon-1.svg" alt="...">
+                                    <img decoding="async" loading="lazy" src="dist/images/service-icon-1.svg" alt="...">
                                 </div>
                                 <div class="pxp-services-c-item-text text-center">
-                                    <!-- <div class="pxp-services-c-item-text-title">Find your future home</div> -->
+                                    <div class="pxp-services-c-item-text-title">Find your future home</div>
                                     <div class="pxp-services-c-item-text-sub">Superar Obstáculos, el cambio positivo que
                                         se debe hacer en tu yo interno "Sé tu el cambio que quieres en los demás.</div>
                                 </div>
@@ -363,174 +762,52 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="about" class="pxp-cta-1 pxp-cover"
-            style="background-image: url(./dist/images/cta-fig-1.jpg); background-position: 50% 60%;">
-            <div class="container-lg">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-6">
-                        <div class="pxp-cta-1-caption pxp-animate-in">
-                            <h2 class="pxp-section-h2">Hola!, Soy María Jesús de Marcos Ubero</h2>
-                            <p class="pxp-text-light">Enfermera desde hace 29 años, trabajo en un helicóptero de
-                                emergencia.</p>
-                            <p class="pxp-text-light">Soy una persona que ha vivido muchas situaciones complicadas,
-                                tanto en el trabajo como en la vida personal, una de ellas fue la enfermedad de mi
-                                madre, enfrentar una enfermedad como el cáncer fue muy difícil, pero desde muy pequeña
-                                me decidí a ver las cosas desde otro ángulo, de una manera positiva, a aprender de las
-                                cosas y desaprender de las que tu creas que no te hacen crecer.</p>
-                            <p class="pxp-text-light">Cada me acepto y me quiero tal como soy, con mis luces y mis
-                                sombras; adquiriendo un estilo de vida SONREVIVIR, SONRIE Y VIVE de la mejor manera que
-                                puedas, aprende de las malas situaciones, aprende a vivir positivamente y vive siempre
-                                con una sonrisa.</p>
-                            <p class="pxp-text-light">Y es así que como también me atreví a escribir mi primer Libro, el
-                                cual tiene el mismo nombre SONREVIVIR, y hoy te invito a ti a QUERERTE a vivir diferente
-                                como a ti te guste, sin prejuicios, sin fantasmas, te invito a adquirir mi estilo de
-                                vida Sonrevivir, verás el cambio en ti.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="nosotros" class="pxp-services pxp-cover mt-50 pt-100 pb-100"
-            style="background-image: url(images/services-h-fige6dd.jpg?v7); background-position: 50% 60%;">
-            <h2 class="text-center pxp-section-h2">¿Qué es Sonrevivir?</h2>
-            <p class="pxp-text-light text-center">Sonreír y vivir con alegría</p>
-
-            <div class="container">
-                <div class="container2">
-                    <div class="pxp-services-container rounded-lg mt-4 mt-md-5">
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">Aceptación</div>
-                                <div class="pxp-services-item-text-sub">Siempre estamos buscando la aceptación de las
-                                    demás personas.</div>
-                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir te enseño a no hay que tener
-                                    miedo a perder personas en el proceso, sino hay que tener miedo que tú te pierdas en
-                                    el proceso de aceptación.</div>
-                            </div>
-                        </div>
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">Halagos y Criticas</div>
-                                <div class="pxp-services-item-text-sub">Muchos de los halagaos como las criticas que
-                                    recibimos determinan nuestra forma de sentirnos</div>
-                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir te enseño no tomarse muy en
-                                    serio ni los halagos ni las criticas, porque siempre son percepciones de la otras
-                                    persona. Lo importante es saber quienes somos nosotros.</div>
-                            </div>
-                        </div>
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">Etiquetas Fisicas</div>
-                                <div class="pxp-services-item-text-sub">Desde que nacemos nos estan poniendo etiquetas,
-                                    que hacen daño aunque la intensión no se esa.</div>
-                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir trabajamos la acepatción y
-                                    poner el foco en lo bueno que cada persona tiene. Sonrevivamos con alegría.</div>
-                            </div>
-                        </div>
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">La empatía</div>
-                                <div class="pxp-services-item-text-sub">Despues de ver, valorar y observar no es facil
-                                    ponerse en lugar de otro, ni en los momentos muy felices ni en los momentos muy
-                                    triste.</div>
-                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir es importante elegir con
-                                    quién puedes hablar con dolor y con quién puedes hablar de felicidad.</div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="pxp-services-container rounded-lg">
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">La Coherencia</div>
-                                <div class="pxp-services-item-text-sub">Cuando haces lo que piensas y lo que dices, no
-                                    hace falta decirlo porque se dice solo.</div>
-                                <div class="pxp-services-item-text-sub mt-10">La coherencia y sonrevivir es algo que van
-                                    juntos.</div>
-                            </div>
-                        </div>
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">Conversaciones en la ambulancia
-                                </div>
-                                <div class="pxp-services-item-text-sub">Es frecuente que los Madres y Padres no acepten
-                                    el camino de sus hijos, ¿Qué te gustaria que fuesen?, ¿Qué te gusta que hubieran
-                                    estaudiado?.</div>
-                                <div class="pxp-services-item-text-sub mt-10">Sonrevivir siempre, mucho mejor aceptar
-                                    que luchar contra la realidad que ves.</div>
-                            </div>
-                        </div>
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">El cambio</div>
-                                <div class="pxp-services-item-text-sub">Cuantas veces te has cuestionado o preguntado
-                                    que eso que dicen de ti no te gusta o no tiene nada que ver contigo?.</div>
-                                <div class="pxp-services-item-text-sub mt-10">Confia en ti y Sonrevive, cuando triunfes
-                                    y consigas aquello que siempre quisiste sonrie más fuerte y más grande.</div>
-                            </div>
-                        </div>
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">Planeta Mental</div>
-                                <div class="pxp-services-item-text-sub">Es frecuente configurar una serie de normas; de
-                                    qué es justo, que es injusto, que de se debe de hacer y que no se debe hacer.</div>
-                                <div class="pxp-services-item-text-sub mt-10">En Sonrevivir (libro), encontraras
-                                    preguntas que los haran navegar en nuestra mente.</div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="pxp-services-container rounded-lg">
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">Máscaras</div>
-                                <div class="pxp-services-item-text-sub">Por qué queremos aperentar eso que no somos? Por
-                                    qué fingir una vida que no tenemos?</div>
-                                <div class="pxp-services-item-text-sub mt-10">En Sorenvivir te enseño a cómo vivir sin
-                                    máscaras, como vivir de forma valiente cada día porque lo importante es que tú te
-                                    quieras y te aceptes.</div>
-                            </div>
-                        </div>
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">Cuidado del Cuerpo</div>
-                                <div class="pxp-services-item-text-sub">Actualmente ni hay que comer del todo y no hay
-                                    que comerselo todo.</div>
-                                <div class="pxp-services-item-text-sub mt-10">En sonrevivir cuidamos mente y cuidamos
-                                    cuerpo de forma saludable para vivir más y mejor.</div>
-                            </div>
-                        </div>
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">El consejo</div>
-                                <div class="pxp-services-item-text-sub">Cuantas veces a lo largo de la vida has recibido
-                                    algun consejo sin pedirlo?</div>
-                                <div class="pxp-services-item-text-sub mt-10">En Sorevivir: Te digo como aconsejar,
-                                    cuando aconsejar y qué hacer en esas situaciones.</div>
-                            </div>
-                        </div>
-                        <div class="pxp-services-item">
-                            <div class="pxp-services-item-text text-justify">
-                                <div class="pxp-services-item-text-title text-center">La adolescencia</div>
-                                <div class="pxp-services-item-text-sub">Desde que mis hijos eran bebes, las personas
-                                    comenzaron a advertirme de las diferentes adolescencias que hiban a tener.</div>
-                                <div class="pxp-services-item-text-sub mt-10">En sonrevivir te doy metodos y formas para
-                                    hablar en la infancia y así puedan encontrarse mejor en la adolecencia.</div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> -->
     </div>
 
+    <div class="pxp-footer pt-100 pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="pxp-footer-logo">SONREVIVIR</div>
+                    <!-- <div class="pxp-footer-address mt-2">
+                        90 Fifth Avenue, 3rd Floor<br>
+                        San Francisco, CA 1980<br>
+                        (123) 456-7890
+                    </div> -->
+                    <div class="pxp-footer-social mt-2">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/></svg></a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg></a>
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.606 6.995c-.076-.298-.292-.523-.539-.592C18.63 6.28 16.5 6 12 6s-6.628.28-7.069.403c-.244.068-.46.293-.537.592C4.285 7.419 4 9.196 4 12s.285 4.58.394 5.006c.076.297.292.522.538.59C5.372 17.72 7.5 18 12 18s6.629-.28 7.069-.403c.244-.068.46-.293.537-.592C19.715 16.581 20 14.8 20 12s-.285-4.58-.394-5.005zm1.937-.497C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <h4 class="pxp-footer-header mt-4 mt-lg-0">Company</h4>
+                            <ul class="list-unstyled pxp-footer-links mt-2">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Agents</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Demos</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="pxp-footer-bottom mt-2">
+                <div><a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></div>
+                <div class="pxp-footer-copyright">&copy; GRUVA 2021</div>
+            </div>
+        </div>
+    
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+    integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -543,10 +820,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
-        integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.15.0/video.min.js" integrity="sha512-4E8YxQ8G1z0q1jTD+pkVhDAje15qSzG1iRCIggy2xvlwbmlE5WwnM1/mUgzns0Z0vORsW0ecPPyAN53o3YhP/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="dist/js/main3813.js"></script>
+    <!-- <script src="./script.js"></script> -->
 </body>
 
 </html>
