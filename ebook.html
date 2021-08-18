@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="theme-color" content="#00AAA9">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./dist/images/icon.png">
+    <link rel="apple-touch-startup-image" href="dist/images/icon.png">
+    <link rel="shortcut icon" href="./dist/images/icon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/style2.min.css">
+</head>
+
+
+<body id="body" class="hidden">
+
+    <div class="overlay">
+        <!-- <h3 class="title">SONREVIVIR</h3>
+        <P>Lorem ipsum dolor sit amet</p> -->
+        <span class="spinner-icon"></span>
+    </div>
+
+    <header class="pxp-header pxp-animate">
+        <nav>
+            <div class="logo">
+                <a href="/" class="pxp-logo text-decoration-none"><img src="./dist/images/logo.png"
+                        alt="Logo de Sonrevivir"></a>
+            </div>
+
+            <!----Menu Btn-->
+            <div class="btns pxp-header-nav-trigger">
+                <svg class="btn-menu open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M14 10v4h-4v-4h4zm2 0h5v4h-5v-4zm-2 11h-4v-5h4v5zm2 0v-5h5v4a1 1 0 0 1-1 1h-4zM14 3v5h-4V3h4zm2 0h4a1 1 0 0 1 1 1v4h-5V3zm-8 7v4H3v-4h5zm0 11H4a1 1 0 0 1-1-1v-4h5v5zM8 3v5H3V4a1 1 0 0 1 1-1h4z" />
+                </svg>
+            </div>
+
+        </nav>
+
+        <!-- MENU ITEMS -->
+        <div class="menu">
+            <div class="menu-left">
+                <!-- <p>HIDRO<span>STYLE</p> -->
+            </div>
+
+            <div class="menu-right">
+                <div class="btn-menu cerrar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </div>
+                <div class="menu-container">
+                    <div class="menu-content">
+                        <div class="menu-item"><a href="/#body">INICIO</a></div>
+                        <div class="menu-item"><a href="/#sonrevivir">¿QUÉ ES SONREVIVIR?</a></div>
+                        <div class="menu-item"><a href="/#about">SOBRE MÍ</a></div>
+                        <div class="menu-item"><a href="/#lanzamientos">PRÓXIMOS LANZAMIENTOS</a></div>
+                        <div class="menu-item"><a href="/#compartir">¿POR QUÉ COMPARTO ESTO CONTIGO?</a>
+                        </div>
+                        <div class="menu-item"><a href="/#newsletter">SUSCRÍBETE A NUESTRO NEWSLETTER</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-icons">
+                        <a href="https://www.facebook.com/Sonrevivir-109553738088984" target="_blank"
+                            rel="nofollow noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" />
+                                </svg></a>
+                        <a href="https://www.instagram.com/sonrevivir/" target="_blank"
+                            rel="nofollow noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z" />
+                                </svg></a>
+                        <a href="https://www.tiktok.com/@sonrevivir" target="_blank"
+                            rel="nofollow noopener noreferrer"><svg aria-hidden="true" focusable="false"
+                                data-prefix="fab" data-icon="tiktok" class="svg-inline--fa fa-tiktok fa-w-14" width="24"
+                                height="24" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#070707"
+                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+                                </path>
+                            </svg></a>
+                        <a href="https://www.youtube.com/channel/UCAdtKvREuteWwCNUP9Frvyg" target="_blank"
+                            rel="nofollow noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M19.606 6.995c-.076-.298-.292-.523-.539-.592C18.63 6.28 16.5 6 12 6s-6.628.28-7.069.403c-.244.068-.46.293-.537.592C4.285 7.419 4 9.196 4 12s.285 4.58.394 5.006c.076.297.292.522.538.59C5.372 17.72 7.5 18 12 18s6.629-.28 7.069-.403c.244-.068.46-.293.537-.592C19.715 16.581 20 14.8 20 12s-.285-4.58-.394-5.005zm1.937-.497C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5v-7l6 3.5-6 3.5z" />
+                                </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Start Contact Area  -->
+        <div class="rn-contact-area rn-section-gapBottom pt-150 pb-50 bg_color--1">
+            <div class="contact-form--1 ebook">
+                <div class="container">
+                    <div class="row row--35 align-items-center">
+                        <div class="col-xl-7 order-1 order-lg-1 mb-100">
+                            <!-- <object data="./dist/video/a-topiary-numbered.pdf" type="application/pdf" width="100%" height="600px"></object> -->
+                            <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://sonrevivir.diarpu4.ga/pdf.pdf" type="application/pdf" width="100%" height="600" allowfullscreen></iframe>
+                            <!-- <iframe id="pdf-js-viewer" src="/web/viewer.html?file=%2F./a-topiary-numbered.pdf" type="application/pdf" title="webviewer" frameborder="0" width="100%" height="600"></iframe> -->
+                        </div>
+                        <div class="col-xl-5 order-2 order-lg-2">
+                            <div class="section-title text-left mb-30 mb_sm--30 mb_md--30">
+                                <h2 class="title">Quiero mi ebook</h2>
+                                <p class="description"></p>
+                            </div>
+                            <div class="form-wrapper">
+                                <form class="form-cesped" id="form-contact" method="POST"
+                                    action="./dist/php/submit.php">
+                                    <input class="subject" type="hidden" name="subject" value="Sonrevivir 1era Edición | Ebook">
+                                    <label htmlFor="item01">
+                                        <input type="text" name="name" id="name" required
+                                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" minlength="7" maxlength="40"
+                                            placeholder="Nombre *" />
+                                    </label>
+
+                                    <label htmlFor="item02">
+                                        <input type="email" name="email" id="email" required autocomplete="off"
+                                            pattern="^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                                            minlength="13" maxlength="55" placeholder="Email *">
+                                    </label>
+
+                                    <label htmlFor="item03">
+                                        <input type="number" name="tel" id="tel" required autocomplete="off"
+                                            minlength="5" maxlength="16" placeholder="WhatsApp *">
+                                    </label>
+                                    <div class="check-group">
+                                        <input type="checkbox" id="check-term" value="Acepta" required
+                                            autocomplete="off">
+                                        <label for="check-term">Acepto los <a href="#form" data-fancybox>Términos, condiciones así como las política de privacidad y uso de datos.</a></label>
+                                    </div>
+                                    <button class="rn-button-style--2 btn_solid" type="submit" id="submit"
+                                        value="submit" name="submit" id="mc-embedded-subscribe">Quiero mi libro a
+                                        €4.99</button>
+                                    <div id="form-messages"></div>
+                                </form>
+                                <div id="form-transf">
+                                    <div id="form">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-12 order-lg-1 pt-md--80 pt--40">
+                                                    <div class="omega-contact-form">
+                                                        <h4 class="form-title mb-30 mb-lg--55 text-center">Términos, condiciones así como las política de privacidad y uso de datos</h4>
+                                                        <!-- <p class="text-center">Términos y condiciones</p> -->
+                                                        <div>
+                                                            <ul class="list-modal">
+                                                                <li>El audiolibro completo será entregado mediante un acceso habilitado en nuestra web, nuestra cuenta de Hotmart o por un link de Google Drive para su uso y disfrute exclusivo y personal. Está prohibida la reproducción parcial o total de la obra.</li>
+                                                                <li>El ebook completo será entregado mediante un acceso habilitado en nuestra web, nuestra cuenta de Hotmart o por un link de Google Drive para su uso y disfrute exclusivo y personal. Está prohibida la reproducción parcial o total de la obra.</li>
+                                                                <li>El envío del libro físico se realizará por DHL a cuenta y cargo del comprador, podrá optarse por otros medios de envío previa coordinación. Está prohibida la reproducción parcial o total de la obra.</li>
+                                                                <li>La información proporcionada es estrictamente confidencial.</li>
+                                                                <li>Sus datos personales serán resguardados en nuestra base de datos (Sonrevivir) conforme a la legislación vigente referida a la privacidad y uso de datos de la UE</li>
+                                                                <li>Acepto que me envíen información sobre Sonrevivir.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Area  -->
+    </main>
+
+    <div class="pxp-footer pt-50 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="pxp-footer-logo"><img src="./dist/images/logo.png" style="width: 50%"
+                            alt="Logo Sonrevivir de la Sección Footer"></div>
+                    <!-- <div class="pxp-footer-address mt-2">
+                        90 Fifth Avenue, 3rd Floor<br>
+                        San Francisco, CA 1980<br>
+                        (123) 456-7890
+                    </div> -->
+                    <div class="pxp-footer-social mt-2">
+                        <a href="https://www.instagram.com/sonrevivir/" target="_blank"
+                            rel="nofollow noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z" />
+                                </svg></a>
+                        <a href="https://www.facebook.com/Sonrevivir-109553738088984" target="_blank"
+                            rel="nofollow noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" />
+                                </svg></a>
+                        <a href="" target="_blank" rel="nofollow noopener noreferrer"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M19.606 6.995c-.076-.298-.292-.523-.539-.592C18.63 6.28 16.5 6 12 6s-6.628.28-7.069.403c-.244.068-.46.293-.537.592C4.285 7.419 4 9.196 4 12s.285 4.58.394 5.006c.076.297.292.522.538.59C5.372 17.72 7.5 18 12 18s6.629-.28 7.069-.403c.244-.068.46-.293.537-.592C19.715 16.581 20 14.8 20 12s-.285-4.58-.394-5.005zm1.937-.497C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5v-7l6 3.5-6 3.5z" />
+                                </svg></a>
+                        <a href="https://www.tiktok.com/@sonrevivir" target="_blank"
+                            rel="nofollow noopener noreferrer"><svg aria-hidden="true" focusable="false"
+                                data-prefix="fab" data-icon="tiktok" class="svg-inline--fa fa-tiktok fa-w-14" width="24"
+                                height="24" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
+                                </path>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="pxp-footer-header mt-4 mt-lg-0">Mapa del Sitio</h4>
+                            <ul class="list-unstyled pxp-footer-links mt-2">
+                                <li><a href="/#sonrevivir">¿Qué es Sonrevivir?</a></li>
+                                <li><a href="/#about">Sobre Mí</a></li>
+                                <li><a href="/#lanzamientos">Próximos Lanzamientos</a></li>
+                                <li><a href="/#compartir">¿Por qué comparto esto contigo?</a></li>
+                                <li><a href="/#newsletter">Suscríbete a nuestro Newsletter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="pxp-footer-header mt-4 mt-lg-0">Lanzamientos</h4>
+                            <ul class="list-unstyled pxp-footer-links mt-2">
+                                <li><a href="audiolibro">Audiolibro</a></li>
+                                <li><a href="ebook">Ebook</a></li>
+                                <li><a href="libro">Libro Físico</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pxp-footer-bottom mt-2">
+                <div><a href="#form" data-fancybox>Términos, Condiciones, <br> Política de privacidad y uso de datos</a></div>
+                <div class="pxp-footer-copyright mt-10"><a href="http://es.gruva.net">&copy; GRUVA 2021</a></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+        integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"
+        integrity="sha512-XLo6bQe08irJObCc86rFEKQdcFYbGGIHVXcfMsxpbvF8ompmd1SNJjqVY5hmjQ01Ts0UmmSQGfqpt3fGjm6pGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
+        integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="./dist/php/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>

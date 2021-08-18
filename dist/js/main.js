@@ -1,4 +1,5 @@
 const body = document.querySelector('body');
+
 var tl = gsap.timeline();
 
 window.onload = function(){
@@ -57,7 +58,7 @@ menuOpen.addEventListener('click', (e)=>{
         x: 0,
         pointerEvents: "all",
         ease: "expo.Out",
-    },"-=0.2")
+    },"-=0.3")
     .from('.menu-item', 1,{
         y: 100,
         ease: "expo.Out",
@@ -104,8 +105,10 @@ window.addEventListener('scroll', (e) =>{
     }
 });
 
+
 (function ($) {
     "use strict";
+    
 
     function toggleSticky() {
         if ($('.pxp-sp-agent-section').length > 0) {
@@ -709,30 +712,13 @@ window.addEventListener('scroll', (e) =>{
     });
 
 
-    $(document).ready(function () {
-        // Add smooth scrolling to all links
-        $(".goto").on('click', function (event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-                // Store hash
-                var hash = this.hash;
-                // Get clicked links href attribute
-
-                const link = this.getAttribute("href");
-
-                // Get the targets position
-                const offsetTop = document.querySelector(hash).offsetTop;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: offsetTop -80,
-                }, 2000)
-            } // End if
-        });
+    $(document).on('click', '.goto', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - 80
+        }, 800);
     });
+
 })(jQuery);
 
 // setTimeout( function() {console.clear();}, 3000 );
