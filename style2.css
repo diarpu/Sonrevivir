@@ -860,6 +860,9 @@ a.rn-button-style--2:hover {
 }
 
 /* FORMULARIO */
+img{
+    max-width: 100%;
+}
 .rn-contact-area{
     background-color: rgb(247, 247, 247);
 }

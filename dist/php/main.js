@@ -51,9 +51,9 @@ $(function () {
                 if(subject == "Sonrevivir 1era Edición | Audiolibro"){
                     setTimeout( function() {window.location.href = 'https://www.instagram.com';}, 4000);
                 }
-                if(subject == "Newsletter"){
-                    return false;
-                }      
+                // if(subject == "Newsletter"){
+                //     return false;
+                // }      
             })
             .fail(function (data) {
                 // Make sure that the formMessages div has the 'error' class.
