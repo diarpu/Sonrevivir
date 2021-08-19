@@ -843,6 +843,9 @@ button.rn-button-style--2{
     transition: 0.3s;
     background-color: #00AAA9;
     margin-top: 10px;
+    min-width: 180px;
+    display: flex;
+    justify-content: center;
 }
 
 button.rn-button-style--2:hover,
@@ -914,9 +917,9 @@ input#check-term {
     height: 18px;
 }
 .contact-form--1 button:hover span.spinner-icon {
-    border-top: 3px solid #000;
-    border-bottom: 3px solid #000;
-    border-left: 3px solid #000;
+    border-top: 3px solid #00AAA9;
+    border-bottom: 3px solid #00AAA9;
+    border-left: 3px solid #00AAA9;
 }
 
 #form-messages {

@@ -2,7 +2,7 @@ $(function () {
 
     // Get the form.
     var form = $('#form-contact');
-    const textButton = document.querySelector('.contact-form--1 button').innerHTML;
+    const textButton = document.querySelector('#form-contact button').innerHTML;
     const subject = document.querySelector('input.subject').value;
 
     // Get the messages div.
@@ -38,7 +38,10 @@ $(function () {
                 $('#tel').val('');
                 $('#check-term').checked = false;
 
+                setTimeout( function() {document.getElementById("form-messages").style.display = "none" ;}, 4000 );
+                                // setTimeout( function() {document.getElementById("submit").setAttribute('disabled', false);});
                 document.getElementById("submit").innerHTML = textButton;
+
                 if(subject == "Sonrevivir 1era Edición | Libro físico"){
                     setTimeout( function() {window.location.href = 'https://www.google.com';}, 4000);
                 }
@@ -48,9 +51,9 @@ $(function () {
                 if(subject == "Sonrevivir 1era Edición | Audiolibro"){
                     setTimeout( function() {window.location.href = 'https://www.instagram.com';}, 4000);
                 }
-
-                // setTimeout( function() {document.getElementById("submit").setAttribute('disabled', false);});
-                setTimeout( function() {document.getElementById("form-messages").style.display = "none" ;}, 5000 );
+                if(subject == "Newsletter"){
+                    return false;
+                }      
             })
             .fail(function (data) {
                 // Make sure that the formMessages div has the 'error' class.
