@@ -7,4 +7,11 @@ postcss.config.js
 
 general.css
 style.css
+style2.css
 CNAME
+
+robots.txt
+script.js
+sitemap.xml
+sw.js
+manifest.json
