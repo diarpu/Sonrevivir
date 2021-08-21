@@ -6,8 +6,8 @@ postcss.config.js
 .htaccess
 
 general.css
-style.css
 style2.css
+style.css
 CNAME
 
 robots.txt
