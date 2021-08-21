@@ -4,10 +4,13 @@ package-lock.json
 postcss.config.js
 
 .htaccess
+robots.txt
+sitemap.xml
 
-general.css
-style2.css
+root.css
+defaul.css
 style.css
+style2.css
 CNAME
 
 robots.txt
